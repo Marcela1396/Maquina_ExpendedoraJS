@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <script type="text/javascript" src="js/funciones.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div align="center">
+        <h1> Maquina Expendedora </h1>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="card">
+            <img src="img/papa.jpg" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Papa Margarita</h5>
+              <p class="card-text" id="disp_papa"> Disponibles: 0 </p>
+              <p class="card-text" > Precio: $1700 </p>
+              <div align="center">
+                <button onclick="comprando_papas()" 
+                id="comprarPapa" class="btn btn-primary">Comprar</button> <br> <br>
+                <button onclick="abastacer_papas()" 
+                id="abastercerPapa" class="btn btn-warning">Abastecer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <img src="img/jugo.jpeg" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Jugo Hit</h5>
+              <p class="card-text" id="disp_papa"> Disponibles: 0 </p>
+              <p class="card-text" > Precio: $2400 </p>
+              <div align="center">
+                <button onclick="comprando_jugo()"
+                id="comprarJugo" class="btn btn-primary">Comprar</button> <br> <br>
+                <button onclick="abastacer_jugo()"
+                id="abastercerJugo" class="btn btn-warning">Abastercer</button>
+              </div>
+            </div>
+          </div>
+
+        
+        </div>
+        <div class="col-3">
+            <div class="card">
+            <img src="img/jet.jpg" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Chocolatina Jet</h5>
+              <p class="card-text" id="disp_choco"> Disponibles: 0 </p>
+              <p class="card-text" > Precio: $700 </p>
+              <button onclick="comprando_choco()" 
+              id="comprarChoco" class="btn btn-primary">Comprar</button>
+              <button onclick="abastacer_choco()" 
+              id="abastercerChoco" class="btn btn-warning">Abastercer</button>
+            </div>
+          </div>
+        
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <img src="img/galleta.png" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Galletas</h5>
+              <p class="card-text" id="disp_galleta"> Disponibles: 0 </p>
+              <p class="card-text" > Precio: $1000 </p>
+              <button onclick="comprando_galleta()" 
+              id="comprarGalleta" class="btn btn-primary">Comprar</button>
+              <button onclick="abastacer_galleta()" 
+              id="abastercerGalleta" class="btn btn-warning">Abastercer</button>
+            </div>
+          </div>
+        
+        </div>
+     
+        <div class="col-12" align="center">
+          <button onclick="cantidad_ventas()" 
+               class="btn btn-success">Cantidad de Ventas
+          </button>
+          <button onclick="total_ventas()" 
+               class="btn btn-danger">Valor total  de Ventas
+          </button>
+          <button onclick="unidades_vendidas()" 
+               class="btn btn-info">Unidades vendidas
+          </button>
+
+        </div>
+      </div>
+    </div>
+      
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <script src="js/funciones2.js"></script>
+  </body>
+</html>
