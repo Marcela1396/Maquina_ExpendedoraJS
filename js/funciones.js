@@ -172,3 +172,46 @@ function abastacer_papas(){
 	let disponible = m.darProducto1().darCantidadUnidadesDisponibles();
 	document.getElementById('disp_papa').innerHTML = 'Disponible: ' + disponible;
 }
+
+function comprando_papas(){
+	let cant_disp;
+	cant_disp = m.darProducto1().darCantidadUnidadesDisponibles();
+	if(cant_disp <=0){
+		/*
+		Si no hay disponibilidad del producto
+		*/
+		alert ('El producto se encuentra agotado');
+	}
+	else{
+		/*
+		Si hay disponibilidad del producto
+		*/
+		m.venderProducto1();
+		let disponibilidad = m.darProducto1().darCantidadUnidadesDisponibles();
+		document.getElementById('disp_papa').innerHTML =' Disponibles: ' + disponibilidad;
+	}
+
+}
+
+function cantidad_ventas(){
+	// Genera un alert con la cantidad de ventas de todos los productos
+	alert("La cantidad de ventas de la maquina es:" + m.darCantidadTotalVentas());
+}
+
+
+function total_ventas(){
+	// Genera un alert con el total de las ventas
+	alert("La cantidad de ventas totales es:" + m.darValorTotalVentas());
+}
+
+function unidades_vendidas(){
+	let vend_papa = m.darProducto1().darCantidadUnidadesVendidas();
+	let vend_jugo = m.darProducto2().darCantidadUnidadesVendidas();
+	let vend_choco = m.darProducto3().darCantidadUnidadesVendidas();
+	let vend_galleta = m.darProducto4().darCantidadUnidadesVendidas();
+	alert("La cantidad de unidades vendidas por producto es:\n Papa " + vend_papa
+		+ "\n Jugo Hit :" + vend_jugo
+		+ "\n Chocolatina jet" + vend_choco
+		+ "\n Galletas " + vend_galleta
+		);
+}
